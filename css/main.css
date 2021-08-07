@@ -8,8 +8,8 @@ div {box-sizing: border-box;}
 .main, .sub1, .sub2, .sub3 {width: 100%;}
 .header {width: 100%; height: 82.5px; background-color: black; position: fixed; z-index: 1000; top: 0; left: 0; transition: top 0.3s ease-in-out;}
 .header-up {top: -82.5px;}
-.header .header1 {display: flex; padding: 2vw 0; justify-content: space-between; margin-top: 1vw;}
-.header .header1 .logo img {width: 20vw;}
+.header .header1 {display: flex; padding: 4vw 0; justify-content: space-between; margin-top: 1vw;}
+.header .header1 .logo img {width: 20vw; margin-left: 3vw;}
 .header .header1 .menu_btn {width: 10vw;}
 .header .header1 .chartList-wrap {position: relative; width: 40vw;}
 .header .header1 .chartList-wrap img {width: 3vw; position: absolute;}
@@ -46,8 +46,10 @@ div {box-sizing: border-box;}
 .visual {width: 100vw; height: 480px; background-color: black;}
 .visual-swiper {width: 100vw; height: 480px;}
 .visual .swiper-slide {width: 100%; height: 100%;}
+.visual .swiper-slide img {width: 100vw;}
 /*배너*/
 .banner {width: 100%; padding: 15vw 0; background-color: black;}
+.banner img {width: 100vw;}
 /*탭메뉴*/
 .tab {width: 100%; height: 100%; background-color: black;}
 .tab .tab_wrap {width: 66.6666666666%; margin: 0 auto; background-color: black;}
@@ -56,7 +58,7 @@ div {box-sizing: border-box;}
 .tab .tab_title a.active {border: 1px solid #eee;}
 .tab .tab_content {width: 100%; height: 80vh; position: relative;}
 .tab .tab_content > div {position: absolute; top: 0; left: 0;}
-.tab .tab_content > div img {width: 480px;}
+.tab .tab_content > div img {width: 100vw;}
 /*매거진*/
 .magazine {width: 100vw; height: 125vh; position: relative; float: left; background-color: black; text-align: center; padding-top: 10vw;}
 .magazine p {color: #eee; margin: 0 auto; font-size: 4vw; border: 0.5px solid #eee; width: 45vw; height: 30px; line-height: 30px; font-weight: bold;}
@@ -64,7 +66,8 @@ div {box-sizing: border-box;}
 .magazine-btn a {background-color: #222222; margin-bottom: 33vw; margin-left: 5vw;}
 .magazine-btn a:last-child {margin-bottom: 0;}
 .magazine-btn img {width: 7vw; background-color: #222222;}
-.magazine_photo {width:100vw; height:780px; background-image: url(../img/melon-magazine.png); background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; }
+.magazine_photo {position: absolute; }
+.magazine_photo img {width: 100vw;}
 .magazine-Swiper {width: 100%; height: 100%;}
 .swiper-button-next {left: 93vw;}
 .magazine-Swiper .close_btn {width: 10vw; margin-top: -100vw;}
