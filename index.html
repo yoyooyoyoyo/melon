@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" type="text/css">
+    <link rel="stylesheet" href="css/swiper-bundle.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="shortcut icon" href="img/melon-favicon.png" type="image/x-icon">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.mobile-1.5.0-rc1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!--메인페이지-->
+    <div data-role="page" id="main" class="main">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="멜론 로고"></a>
+                </div>
+                <div class="chartList-wrap">
+                    <img src="img/up-arrow-white.png" alt="위로">
+                    <div class="chartList">
+                        <ul>
+                            <li>
+                                <a href="#">1.BUTTER - BTS</a>
+                                <ul class="sub">
+                                    <li>2.WEEKNED - 태연</li>
+                                    <li>3.낙하 - AKMU (악뮤)</li>
+                                    <li>4.신호등 - 이무진</li>
+                                    <li>5.바라만 본다 - MSG워너비</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search">
+                    <img src="img/search-white.png" alt="검색">
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu-1-white.png" alt="메뉴"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main" data-transition="fade" class="active">MAIN</a></li>
+                    <li><a href="#sub1" data-transition="slide">MELON CHART</a></li>
+                    <li><a href="#sub2" data-transition="fade">EVENT</a></li>
+                    <li><a href="#sub3" data-transition="fade" >TICKET</a></li>
+                </ul>
+            </div>
+            <!--햄버거 버튼 누르면 나오는 메뉴-->
+            <div class="nav">
+                <div class="nav_line">
+                    <div class="nav_login">
+                        <a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">LOG-IN</span></a>
+                    </div>
+                    <div class="close">
+                        <a href="#"><img src="img/close-whtie.png" alt="닫기"></a>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="홈">MELON HOME</span></a></li>
+                        <li><a href="#"><span><img src="img/music-white.png" alt="최신음악">최신음악</span></a></li>
+                        <li><a href="#"><span><img src="img/playlist-white.png" alt="헤드폰">멜론차트</span></a></li>
+                        <li><a href="#"><span><img src="img/play-button-white.png" alt="헤드폰">뮤직비디오</span></a></li>
+                        <li><a href="#"><span><img src="img/trophy-whute.png" alt="헤드폰">멜론뮤직어워드</span></a></li>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">이벤트</span></a></li>
+                        <li><a href="#"><span><img src="img/newspaper-white.png" alt="헤드폰">공지사항</span></a></li>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">멜론티켓</span></a></li>
+                    </ul>
+                </nav>
+                <div class="sns_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/twitter.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="img/facebook-logo.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/instagram-(1)-white.png" alt="인스타그램"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--메인페이지 컨텐츠-->
+        <div data-role="content" class="section">
+            <div class="visual">
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="#"><img src="img/main-slider1.png" alt="메인1"></a></div>
+                      <div class="swiper-slide"><a href="#"><img src="img/main-slider2.png" alt="메인2"></a></div>
+                      <div class="swiper-slide"><a href="#"><img src="img/main-slider3.png" alt="메인3"></a></div>
+                      <div class="swiper-slide"><a href="#"><img src="img/main-slider4.png" alt="메인4"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="img/banner.png" alt="배너"></a>
+            </div>
+            <div class="tab">
+                <div class="tab_wrap">
+                    <div class="tab_title">
+                        <a href="#" class="t1 active">인기있어요</a>
+                        <a href="#" class="t2">멜론 DJ</a>
+                    </div>
+                </div>
+                <div class="tab_content">
+                    <div class="con1">
+                        <a href="#"><img src="img/cyworld-1.png" alt="싸이월드"></a>
+                    </div>
+                    <div class="con2">
+                        <a href="#"><img src="img/melonDj.png" alt="멜론디제이"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="magazine">
+                <p>멜론 데일리 매거진</p>
+                <div class="magazine-btn">
+                    <a href="#" class="m1"><img src="img/more.png" alt="더보기"></a>
+                    <a href="#" class="m2"><img src="img/more.png" alt="더보기"></a>
+                    <a href="#" class="m3"><img src="img/more.png" alt="더보기"></a>
+                    <a href="#" class="m4"><img src="img/more.png" alt="더보기"></a>
+                </div>
+                <div class="magazine_photo"></div>
+                <div class="magazine_sub">
+                    <div class="swiper-container magazine-Swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="#"><img src="img/magazine-1.png" alt="매거진1"></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="img/magazine-2.png" alt="매거진2"></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="img/magazine-3.png" alt="매거진3"></a></div>
+                          <div class="swiper-slide"><a href="#"><img src="img/magazine-4.png" alt="매거진4"></a></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-close">
+                            <a href="#"><img src="img/close-whtie.png" alt="닫기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" class="footer">
+            <h2><a href="#"><span><img src="img/up-white.png" alt="위로"></span>맨위로</a></h2>
+            <div class="info">
+                 <ul>
+                     <li>(주)멜론컴퍼니</li>
+                     <li>대표자 : 이재욱</li>
+                     <li>주소 : 경기도 성남시 분당구 판교역로 235 4층</li>
+                     <li>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</li>
+                     <li>이메일 : melon_info@kakaocorp.com</li>
+                     <li> © Melon Company Corp</li>
+                 </ul>
+            </div>
+        </div>
+        <div class="main_icon"><!--항상 화면 아래에 있는 아이콘-->
+            <div class="icon_wrap">
+                <div class="home">
+                    <a href="#"><img src="img/house-white.png" alt="홈"></a>
+                </div>
+                <div class="list">
+                    <a href="#"><img src="img/playlist-white.png" alt="플레이리스트"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--첫번쨰 서브페이지-->
+    <div data-role="page" id="sub1" class="sub1">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="멜론 로고"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu-1-white.png" alt="메뉴"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main">NEW ALBUM</a></li>
+                    <li><a href="#sub1" class="active">MELON CHART</a></li>
+                    <li><a href="#sub2">EVENT</a></li>
+                    <li><a href="#sub3">TICKET</a></li>
+                </ul>
+            </div>
+            <!--햄버거 버튼 누르면 나오는 메뉴-->
+            <div class="nav">
+                <div class="nav_line">
+                    <div class="nav_login">
+                        <a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">LOG-IN</span></a>
+                    </div>
+                    <div class="close">
+                        <a href="#"><img src="img/close-whtie.png" alt="닫기"></a>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="홈">MELON HOME</span></a></li>
+                        <li><a href="#"><span><img src="img/music-white.png" alt="최신음악">최신음악</span></a></li>
+                        <li><a href="#"><span><img src="img/playlist-white.png" alt="헤드폰">멜론차트</span></a></li>
+                        <li><a href="#"><span><img src="img/play-button-white.png" alt="헤드폰">뮤직비디오</span></a></li>
+                        <li><a href="#"><span><img src="img/trophy-whute.png" alt="헤드폰">멜론뮤직어워드</span></a></li>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">이벤트</span></a></li>
+                        <li><a href="#"><span><img src="img/newspaper-white.png" alt="헤드폰">공지사항</span></a></li>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">이용권구매</span></a></li>
+                    </ul>
+                </nav>
+                <div class="sns_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/twitter.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="img/facebook-logo.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/instagram-(1)-white.png" alt="인스타그램"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--첫번째 sub페이지의 header-->
+        <div data-role="content" class="section">
+            <div class="hit24">
+                <div class="title-1">
+                    <h1><span><img src="img/melon-favicon.png" alt="멜론">24HIT</span></h1>
+                </div>
+                <div class="list24">
+                    <ul>
+                        <li><input type="checkbox" name="check" id="check"><span><img src="img/list24-1.png" alt="list1"></span><h3>바라만 본다</h3><h5>MSG워너비 (M.O.M)</h5><img src="img/play-button-arrowhead.png" alt="플레이버튼"></li>
+                        <li><input type="checkbox" name="check" id="check"><span><img src="img/list24-2.png" alt="list1"></span><h3>신호등</h3><h5>이무진</h5><img src="img/play-button-arrowhead.png" alt="플레이버튼"></li>
+                        <li><input type="checkbox" name="check" id="check"><span><img src="img/list24-3.png" alt="list1"></span><h3>NEXT LEVEL</h3><h5>aespa (에스파)</h5><img src="img/play-button-arrowhead.png" alt="플레이버튼"></li>
+                        <li><input type="checkbox" name="check" id="check"><span><img src="img/list24-4.png" alt="list1"></span><h3>낙하</h3><h5>AKMU (악뮤)</h5><img src="img/play-button-arrowhead.png" alt="플레이버튼"></li>
+                        <li><input type="checkbox" name="check" id="check"><span><img src="img/list24-5.png" alt="list1"></span><h3>PERMISSION TO DANCE</h3><h5>BTS (방탄소년단)</h5><img src="img/play-button-arrowhead.png" alt="플레이버튼"></li>
+                        <li><input type="checkbox" name="check" id="check"><span><img src="img/list24-6.png" alt="list1"></span><h3>BUTTER</h3><h5>BTS (방탄소년단)</h5><img src="img/play-button-arrowhead.png" alt="플레이버튼"></li>
+                        <li><input type="checkbox" name="check" id="check"><span><img src="img/list24-7.png" alt="list1"></span><h3>WEEKEND</h3><h5>태연</h5><img src="img/play-button-arrowhead.png" alt="플레이버튼"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" class="footer">
+            <h2><a href="#"><span><img src="img/up-white.png" alt="위로"></span>맨위로</a></h2>
+            <div class="info">
+                <ul>
+                    <li>(주)멜론컴퍼니</li>
+                    <li>대표자 : 이재욱</li>
+                    <li>주소 : 경기도 성남시 분당구 판교역로 235 4층</li>
+                    <li>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</li>
+                    <li>이메일 : melon_info@kakaocorp.com</li>
+                    <li> © Melon Company Corp</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main_icon"><!--항상 화면 아래에 있는 아이콘-->
+            <div class="icon_wrap">
+                <div class="home">
+                    <a href="#"><img src="img/house-white.png" alt="홈"></a>
+                </div>
+                <div class="list">
+                    <a href="#"><img src="img/playlist-white.png" alt="플레이리스트"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--두번쨰 서브페이지-->
+    <div data-role="page" id="sub2" class="sub2">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="멜론 로고"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu-1-white.png" alt="메뉴"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main">NEW ALBUM</a></li>
+                    <li><a href="#sub1">MELON CHART</a></li>
+                    <li><a href="#sub2" class="active">EVENT</a></li>
+                    <li><a href="#sub3">TICKET</a></li>
+                </ul>
+            </div>
+            <!--햄버거 버튼 누르면 나오는 메뉴-->
+            <div class="nav">
+                <div class="nav_line">
+                    <div class="nav_login">
+                        <a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">LOG-IN</span></a>
+                    </div>
+                    <div class="close">
+                        <a href="#"><img src="img/close-whtie.png" alt="닫기"></a>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="홈">MELON HOME</span></a></li>
+                        <li><a href="#"><span><img src="img/music-white.png" alt="최신음악">최신음악</span></a></li>
+                        <li><a href="#"><span><img src="img/playlist-white.png" alt="헤드폰">멜론차트</span></a></li>
+                        <li><a href="#"><span><img src="img/play-button-white.png" alt="헤드폰">뮤직비디오</span></a></li>
+                        <li><a href="#"><span><img src="img/trophy-whute.png" alt="헤드폰">멜론뮤직어워드</span></a></li>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">이벤트</span></a></li>
+                        <li><a href="#"><span><img src="img/newspaper-white.png" alt="헤드폰">공지사항</span></a></li>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">이용권구매</span></a></li>
+                    </ul>
+                </nav>
+                <div class="sns_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/twitter.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="img/facebook-logo.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/instagram-(1)-white.png" alt="인스타그램"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--두번째 sub페이지의 header-->
+        <div data-role="content" class="section">
+            <div class="event-title">
+                <h2><span><img src="img/melon-favicon.png" alt="멜론">진행중인 이벤트</h2>
+            </div>
+            <div class="visual-1">
+                <div class="swiper-container eventSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="#"><img src="img/event1.png" alt="이벤트1"></a></div>
+                      <div class="swiper-slide"><a href="#"><img src="img/event2.png" alt="이벤트2"></a></div>
+                      <div class="swiper-slide"><a href="#"><img src="img/event3.png" alt="이벤트3"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="event_result">
+                <h2><span><img src="img/melon-favicon.png" alt="멜론">당첨자 발표</h2>
+                <div class="event_wrap">
+                    <div class="event_photo">
+                        <div class="photo-1">
+                            <img src="img/choiwooshik.jpeg" alt="최우식">
+                        </div>
+                        <div class="photo-2">
+                            <img src="img/2PM_2021.jpeg" alt="투피엠">
+                        </div>
+                    </div>
+                    <div class="event_1">
+                        <ul>
+                            <li class="e_1">[멜론매거진 이벤트]</li>
+                            <li class="e_2">최우식 댓글 이벤트</li>
+                            <li class="e_1 e_3">[멜론매거진 이벤트]</li>
+                            <li class="e_2">2PM 댓글 이벤트</li>
+                        </ul>
+                    </div>
+                    <div class="event_2">
+                        <ul>
+                            <li class="li_1">경품 - 사인 포스터 5명</li>
+                            <li class="li_2">경품 - 싸인CD 5명</li>
+                        </ul>
+                    </div>
+                    <div class="event_3">
+                        <ul>
+                            <li><a href="#">당첨자 발표 보러가기</a></li>
+                            <li class="li_3"><a href="#">당첨자 발표 보러가기</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" class="footer">
+            <h2><a href="#"><span><img src="img/up-white.png" alt="위로"></span>맨위로</a></h2>
+            <div class="info">
+                 <ul>
+                     <li>(주)멜론컴퍼니</li>
+                     <li>대표자 : 이재욱</li>
+                     <li>주소 : 경기도 성남시 분당구 판교역로 235 4층</li>
+                     <li>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</li>
+                     <li>이메일 : melon_info@kakaocorp.com</li>
+                     <li> © Melon Company Corp</li>
+                 </ul>
+            </div>
+        </div>
+        <div class="main_icon"><!--항상 화면 아래에 있는 아이콘-->
+            <div class="icon_wrap">
+                <div class="home">
+                    <a href="#"><img src="img/house-white.png" alt="홈"></a>
+                </div>
+                <div class="list">
+                    <a href="#"><img src="img/playlist-white.png" alt="플레이리스트"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--세번쨰 서브페이지-->
+    <div data-role="page" id="sub3" class="sub3">
+        <div data-role="header" class="header">
+            <div class="header1">
+                <div class="logo">
+                    <a href="#main"><img src="img/logo.png" alt="멜론 로고"></a>
+                </div>
+                <div class="menu_btn">
+                    <a href="#"><img src="img/menu-1-white.png" alt="메뉴"></a>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#main">NEW ALBUM</a></li>
+                    <li><a href="#sub1">MELON CHART</a></li>
+                    <li><a href="#sub2">EVENT</a></li>
+                    <li><a href="#sub3" class="active">TICKET</a></li>
+                </ul>
+            </div>
+            <!--햄버거 버튼 누르면 나오는 메뉴-->
+            <div class="nav">
+                <div class="nav_line">
+                    <div class="nav_login">
+                        <a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">LOG-IN</span></a>
+                    </div>
+                    <div class="close">
+                        <a href="#"><img src="img/close-whtie.png" alt="닫기"></a>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="홈">MELON HOME</span></a></li>
+                        <li><a href="#"><span><img src="img/music-white.png" alt="최신음악">최신음악</span></a></li>
+                        <li><a href="#"><span><img src="img/playlist-white.png" alt="헤드폰">멜론차트</span></a></li>
+                        <li><a href="#"><span><img src="img/play-button-white.png" alt="헤드폰">뮤직비디오</span></a></li>
+                        <li><a href="#"><span><img src="img/trophy-whute.png" alt="헤드폰">멜론뮤직어워드</span></a></li>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">이벤트</span></a></li>
+                        <li><a href="#"><span><img src="img/newspaper-white.png" alt="헤드폰">공지사항</span></a></li>
+                        <li><a href="#"><span><img src="img/headphone-white.png" alt="헤드폰">이용권구매</span></a></li>
+                    </ul>
+                </nav>
+                <div class="sns_icon">
+                    <ul>
+                        <li><a href="#"><img src="img/twitter.png" alt="트위터"></a></li>
+                        <li><a href="#"><img src="img/facebook-logo.png" alt="페이스북"></a></li>
+                        <li><a href="#"><img src="img/instagram-(1)-white.png" alt="인스타그램"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--세번째 sub페이지의 header-->
+        <div data-role="content" class="section">
+            <div class="ticket">
+                <div class="swiper-container ticket_Swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><a href="#"><img src="img/ticket-1_02.png" alt="티켓1"></a></div>
+                      <div class="swiper-slide"><a href="#"><img src="img/ticket-2_02.png" alt="티켓2"></a></div>
+                      <div class="swiper-slide"><a href="#"><img src="img/ticket-3_02.png" alt="티켓3"></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="ticket_best_wrap">
+                    <div class="best_title">
+                        <h2><span><img src="img/melon-favicon.png" alt="멜론">티켓예매순위</h2>
+                    </div>
+                    <div class="ticket_best">
+                        <div class="best_num">
+                            <ul>
+                                <li class="n1">1.</li>
+                                <li class="n2">2.</li>
+                            </ul>
+                        </div>
+                        <div class="best_pic">
+                            <div class="best_pic_1">
+                                <a href="#"><img src="img/best-1.gif" alt="베스트1"></a>
+                            </div>
+                            <div class="best_pic_2">
+                                <a href="#"><img src="img/hasungwoon.gif" alt="베스트2"></a>
+                            </div>
+                        </div>
+                        <div class="best_comment">
+                            <ul>
+                                <li class="b1">사운드바이사운드_소란X데이브레이크</li>
+                                <li class="b2">2021.11.13</li>
+                                <li class="b3">하성운(HA SUNG WOON) Forest & in</li>
+                                <li class="b2">2021.08.28</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="must_ticket_wrap">
+                    <div class="must_title">
+                        <h2><span><img src="img/melon-favicon.png" alt="멜론">놓치지 말아야 할 공연</h2>
+                    </div>
+                    <div class="must_pic">
+                        <div class="must_pic_1">
+                            <a href="#"><img src="img/must-1.gif" alt="머스트1"></a>
+                            <p class="p1">자이언티 & 원슈타인 콘서트</p>
+                            <p>2021.09.18</p>
+                        </div>
+                        <div class="must_pic_2">
+                            <a href="#"><img src="img/hasungwoon.gif" alt="머스트2"></a>
+                            <p class="p1">하성운(HA SUNG WOON) Forest & in</p>
+                            <p>2021.08.28</p>
+                        </div>
+                        <div class="must_pic_3">
+                            <a href="#"><img src="img/must-3.gif" alt="머스트3"></a>
+                            <p class="p1">라포엠 첫 번째 단독 콘서트 (SCENE #1)</p>
+                            <p>2021.08.13 ~ 2021.08.15</p>
+                        </div>
+                        <div class="must_pic_4">
+                            <a href="#"><img src="img/must-4.gif" alt="머스트4"></a>
+                            <p class="p1">싱어게인 TOP10 전국투어 콘서트 - 부산</p>
+                            <p>2021.08.28</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" class="footer">
+            <h2><a href="#"><span><img src="img/up-white.png" alt="위로"></span>맨위로</a></h2>
+            <div class="info">
+                 <ul>
+                     <li>(주)멜론컴퍼니</li>
+                     <li>대표자 : 이재욱</li>
+                     <li>주소 : 경기도 성남시 분당구 판교역로 235 4층</li>
+                     <li>문의전화 : 1566-7727 (평일 09:00-18:00, 유료)</li>
+                     <li>이메일 : melon_info@kakaocorp.com</li>
+                     <li> © Melon Company Corp</li>
+                 </ul>
+            </div>
+        </div>
+        <div class="main_icon"><!--항상 화면 아래에 있는 아이콘-->
+            <div class="icon_wrap">
+                <div class="home">
+                    <a href="#"><img src="img/house-white.png" alt="홈"></a>
+                </div>
+                <div class="list">
+                    <a href="#"><img src="img/playlist-white.png" alt="플레이리스트"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
