@@ -69,6 +69,7 @@ div {box-sizing: border-box;}
 .magazine_photo {position: absolute; }
 .magazine_photo img {width: 100vw;}
 .magazine-Swiper {width: 100%; height: 100%;}
+.magazine-Swiper .swiper img {width: 100vw;}
 .swiper-button-next {left: 93vw;}
 .magazine-Swiper .close_btn {width: 10vw; margin-top: -100vw;}
 .magazine-Swiper .close_btn img {width: 10vw; background-color: transparent;}
@@ -84,23 +85,26 @@ div {box-sizing: border-box;}
 .main_icon .icon_wrap {display: flex; justify-content: space-around;}
 .main_icon .icon_wrap img {width: 6vw; margin-top: 1.5vh;}
 /*첫번째 서브페이지*/
-.hit24 {width: 100%; float: left; }
+.hit24 {width: 100%; float: left; margin-bottom: 15vw; }
 .hit24 .title-1 h1 span img {width: 4vw; padding: 0vw 2vw;}
-.hit24 .title-1 {margin-top: 3vw; padding: 0vw 2vw;}
-.hit24 .list24 {margin-top: 5vw;}
-.hit24 .list24 ul li {padding: 0vw 3vw; margin: 4vw 0vw;}
-.hit24 .list24 ul li h3, .hit24 .list24 ul li h5 {display: inline; }
-.hit24 .list24 ul li h3::after {content: ""; width: 0.5px; height: 3.2vw; background-color: #464646; position: absolute; margin-top: 4.1vw; margin-left: 3vw;}
-.hit24 .list24 ul li h5 {font-size: 2.5vw;}
-.hit24 .list24 ul li h3 {padding-right: 5vw; margin-right: 1vw;}
-.hit24 .list24 ul li input {width: 2vw; border: 0.2px solid #777; padding: 0vw 2vw;}
-.hit24 .list24 ul li span > img {width: 7vw; padding: 0vw 2vw;}
-.hit24 .list24 ul li img {width: 2vw; margin-left: 3vw;}
+.hit24 .title-1 {margin-top: 15vw; padding: 0vw 2vw;}
+.hit24 .list24 {margin-top: 5vw; border-top: 0.5vw solid rgb(192, 192, 192); border-bottom: 0.5vw solid rgb(192, 192, 192); display: flex; flex-flow: column wrap; justify-content: space-around; }
+.hit24 .list24 .list1 {margin-top: 5vw;}
+.hit24 .list24 > div ul li {float: left; line-height: 14vw; margin-left: 3vw;}
+.hit24 .list24 > div ul li h4, .hit24 .list24 > div ul li h5 {display: inline; }
+.hit24 .list24 > div ul li h4::after {content: ""; width: 0.5px; height: 3.2vw; background-color: #464646; position: absolute; margin-top: 5.2vw; margin-left: 2vw;}
+.hit24 .list24 > div ul li h5 {font-size: 2.5vw; margin-left: 2vw;}
+.hit24 .list24 > div ul li h3 {padding-right: 5vw; margin-right: 1vw;}
+.hit24 .list24 > div ul li input {width: 2vw; border: 0.2px solid #777; padding: 0vw 2vw;}
+.hit24 .list24 > div ul li span > img {width: 7vw; padding: 0vw 2vw;}
+
+.hit24 .list24 > div .photo_1 {width: 2vw; margin-left: 3vw;}
 /*두번째 서브페이지*/
-.event-title { margin: 5vw 0 3vw 2vw;}
+.event-title { margin: 10vw 0 3vw 2vw;}
 .event-title h2 span img {width: 4vw; padding: 0vw 2vw;}
 .visual-1 .swiper-container {width: 100%; height: 100%;}
-.event_result {width: 100%; height: 50vh; margin: 5vw 0 3vw 0; padding-left: 2vw;}
+.visual-1 .swiper-container .swiper-wrapper .swiper-slide img {width: 100vw;}
+.event_result {width: 100%; height: 50vh; margin: 15vw 0 3vw 0; padding-left: 2vw;}
 .event_result h2 span img {width: 4vw; padding: 0vw 2vw;}
 .event_wrap {position: relative; width: 100%;}
 .event_wrap > div {position: absolute;}
@@ -120,25 +124,24 @@ div {box-sizing: border-box;}
 /*세번째 서브페이지*/
 .ticket {width: 100%;}
 .ticket .swiper-container {width: 100%; height: 100%;}
+.ticket .swiper-container .swiper-wrapper .swiper-slide img {width: 100vw;}
 .ticket_best_wrap {width: 100%;}
 .best_title {margin-top: 5vw; border-bottom: 0.5vw solid rgb(202, 201, 201); height: 10vw;}
 .best_title h2 span img {width: 4vw; padding: 0vw 2vw;}
-.ticket_best {width: 100%; height: 40vh; position: relative; border-bottom: 0.5vw solid rgb(202, 201, 201);}
-.ticket_best > div {position: absolute;}
-.ticket_best .best_num {font-size: 5vw; font-weight: bold; margin-top: 13vw; margin-left: 3vw;}
-.ticket_best .best_num .n2 {margin-top: 14vw;}
-.ticket_best .best_pic img {width: 15vw;}
-.ticket_best .best_pic {margin-left: 13vw;}
-.ticket_best .best_pic .best_pic_1 {margin-top: 5vw; margin-bottom: 3vw;}
-.ticket_best .best_comment .b1 {text-align: center; font-size: 3vw; margin-left: 35vw; margin-top: 8.5vh;}
-.ticket_best .best_comment .b2 {font-weight: bold; text-align: center; font-size: 3vw; margin-left: 35vw; margin-top: 2vw;}
-.ticket_best .best_comment .b3 {text-align: center; font-size: 3vw; margin-left: 35vw; margin-top: 10vh;}
+.ticket_best {width: 100%; border-bottom: 0.5vw solid rgb(202, 201, 201); display: flex; flex-flow: row wrap; justify-content: space-around;}
+.ticket_best .best_num {width: 25vw;}
+.ticket_best .best_num ul li p {display: inline-block; }
+.ticket_best .best_num ul li span a img {width: 20vw; margin-left: 5vw;}
+.ticket_best .best_num ul li {margin: 5vw;}
+.ticket_best .best_comment {text-align: center; display: flex; flex-flow: column wrap; justify-content: space-around;}
+.ticket_best .best_comment p {margin-top: 4vw;}
+.ticket_best .best_comment p span {display: inline-block; font-size: 3vw; font-weight: bold; margin-top: 2vw;}
 
-.must_ticket_wrap {width: 100%; margin-top: 15vw;}
+.must_ticket_wrap {width: 100%; margin-top: 20vw;}
 .must_title h2 span img {width: 4vw; padding: 0vw 2vw;}
 .must_pic {border-top: 0.5vw solid rgb(202, 201, 201); border-bottom: 0.5vw solid rgb(202, 201, 201); display: flex; width: 100%; flex-flow: row wrap; justify-content: space-around; text-align: center; margin: 5vw 0;}
 .must_pic > div {width: 50%; padding-top: 5vw;}
 .must_pic .must_pic_3, .must_pic .must_pic_4 {padding-bottom: 5vw;}
 .must_pic img {width: 18vw; margin-bottom: 2vw;}
 .must_pic p {font-size: 2.4vw;}
-.must_pic > div .p1 {font-weight: bold; margin-bottom: 1vw;}
+.must_pic > div .p1 {font-weight: bold; margin-bottom: 1vw; font-size: 2.8vw;}
