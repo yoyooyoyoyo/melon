@@ -1,7 +1,7 @@
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0; background-color: black;}
 li {list-style-type: none; }
 a {display: block; text-decoration: none; color: #eee;}
-html, body {overflow-x: hidden; width: 100%; /*position: relative;*/ background-color: black;}
+html, body {overflow-x: hidden; width: 100%; /*position: relative;*/ }
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {text-shadow: none;}
 /*main*/
 div {box-sizing: border-box;}
@@ -18,13 +18,13 @@ div {box-sizing: border-box;}
 .header .header1 .chartList-wrap .chartList ul li a {color: #eee; padding: 0 0 2vw 1vw;}
 .header .header1 .chartList-wrap .chartList .sub {display: none; width: 40vw; height: 25vw; background-color: black;}
 .header img {width: 20px;}
-.header .header2 {height: 30px; background-color: black; }
+.header .header2 {height: 30px; }/*background-color: black;*/
 .header .header2 ul {display: flex; justify-content: space-between;}
 .header .header2 ul li {width: 25vw;}
 .header .header2 ul li a {text-align: center; line-height: 30px; font-size: 2.8vw; color: #eee;}
 .header .header2 ul li a.active {color: orange;}
 /*햄버거 메뉴*/
-.nav {position: absolute; top: 0; right: -80%; width: 80%; height: 100vh; padding: 3vw; z-index: 100; background-color: black;}
+.nav {position: absolute; top: 0; right: -80%; width: 80%; height: 100vh; padding: 3vw; z-index: 100; }/*background-color: black;*/
 .nav .nav_line {border-bottom: 0.5px solid #eee; height: 10vw; margin-top: 2vw;}
 .nav .nav_login {padding-left: 1vw;}
 .nav .nav_login span img {margin-right: 2vw; }
@@ -43,16 +43,16 @@ div {box-sizing: border-box;}
 .sns_icon ul {display: flex; }
 .sns_icon ul li {margin-right: 5vw;}
 /*메인 슬라이드*/
-.visual {width: 100vw; height: 480px; background-color: black;}
+.visual {width: 100vw; height: 480px;}/*background-color: black;*/
 .visual-swiper {width: 100vw; height: 480px;}
-.visual .swiper-slide {width: 100%; height: 100%;}
+.visual .swiper-slide {width: 100%; height: 480px;}
 .visual .swiper-slide img {width: 100vw;}
 /*배너*/
-.banner {width: 100%; padding: 10vw 0 15vw; background-color: black;}
+.banner {width: 100%; margin: 10vw 0 15vw; }/*background-color: black;*/
 .banner img {width: 100vw;}
 /*탭메뉴*/
-.tab {width: 100%; height: 100%; background-color: black;}
-.tab .tab_wrap {width: 66.6666666666%; margin: 0 auto; background-color: black;}
+.tab {width: 100%;}/*background-color: black;*/
+.tab .tab_wrap {width: 66.6666666666%; margin: 0 auto; }/*background-color: black;*/
 .tab .tab_title {display: flex;}
 .tab .tab_title a {width: 50%; height: 30px; text-align: center; font-size: 4vw; line-height: 30px; color: #eee;}
 .tab .tab_title a.active {border: 1px solid #eee;}
@@ -60,7 +60,7 @@ div {box-sizing: border-box;}
 .tab .tab_content > div {position: absolute; top: 0; left: 0;}
 .tab .tab_content > div img {width: 100vw;}
 /*매거진*/
-.magazine {width: 100vw; height: 125vh; position: relative; float: left; background-color: black; text-align: center; padding-top: 10vw;}
+.magazine {width: 100vw; height: 120vh; position: relative; float: left; text-align: center; margin-top: 10vw;} /*background-color: black;*/
 .magazine p {color: #eee; margin: 0 auto; font-size: 4vw; border: 0.5px solid #eee; width: 45vw; height: 30px; line-height: 30px; font-weight: bold;}
 .magazine-btn {position: absolute; background-color: #222222; margin-top: 15vw;  z-index: 1;}
 .magazine-btn a {background-color: #222222; margin-bottom: 33vw; margin-left: 5vw;}
@@ -75,10 +75,10 @@ div {box-sizing: border-box;}
 .magazine-Swiper .close_btn img {width: 10vw; background-color: transparent;}
 .swiper-button-close a img {width: 10vw;}
 /*푸터*/
-.footer {background-color: black; width: 100%; clear: both; padding-top: 10vw;}
+.footer { width: 100%; height: 40vh; clear: both; padding-top: 10vw;} /*background-color: black;*/
 .footer span img {width: 4vw; padding-right: 1vw;}
-.footer h2 {font-size: 3vw; border: 0.2px solid #eee; border-radius: 20px; text-align: center; width: 30vw; height: 5vh; line-height: 5vh; margin: 0 0 5vw 35vw; margin-top: 4vw; display: inline-block;}
-.footer h2 a {color: #eee;}
+.footer h2 {font-size: 3vw;  text-align: center; width: 30vw; height: 5vh; line-height: 5vh; margin: 0 0 5vw 35vw; margin-top: 4vw; display: inline-block;}
+.footer h2 a {color: #eee; border: 0.2px solid #eee; border-radius: 20px;}
 .footer .info ul li {text-align: center; color: #eee; font-size: 2.6vw; padding: 0.5vw 0;}
 .footer .info {padding-bottom: 5vw;}
 .main_icon {background-color: rgb(63, 61, 61); height: 8vh;}
